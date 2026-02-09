@@ -1,0 +1,4 @@
+import="./theme/catppuccin-macchiato-flamingo.toml"
+
+[flavor]
+dark = "catppuccin-macchiato"

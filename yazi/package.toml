@@ -1,0 +1,44 @@
+[[plugin.deps]]
+use = "Ape/mediainfo"
+rev = "c69314e"
+hash = "b25c2acb08d9ca5ff5cf71ea764fed8d"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "864a021"
+hash = "2f1053f89d1a301a648ab181d0948e38"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "aeca767"
+hash = "277ba273e5d3d647feb5808d0fe4e4e0"
+
+[[plugin.deps]]
+use = "Ape/open-with-cmd"
+rev = "433cf30"
+hash = "86e0312b01bc5762813c6c1d0517f073"
+
+[[plugin.deps]]
+use = "Ape/smart-enter"
+rev = "7b84c89"
+hash = "43eb1a1f2291795fb5b0b2ce1206ebee"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "86d28e4"
+hash = "56fdabc96fc1f4d53c96eb884b02a5be"
+
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "0e2ae47"
+hash = "6656f2869ae2274a0e1860876f15186f"
+
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "8e97b2a"
+hash = "c746e1d1e09349caf0fa1ca03fe62ee4"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-macchiato"
+rev = "9cd2ac4"
+hash = "bc3478e46ebfc411d611e1ccaf04d26a"

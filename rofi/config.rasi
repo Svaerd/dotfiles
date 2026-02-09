@@ -1,0 +1,7 @@
+@import "./style/simple-vertical-1.rasi"
+
+configuration {
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary"; 
+}
+
