@@ -37,6 +37,18 @@ if status is-interactive # Commands to run in interactive sessions can go here
         rm -f -- "$tmp"
     end
 
+    function n
+        kitty @ set-spacing margin=0
+        command nvim $argv
+        kitty @ set-spacing margin=10
+    end
+
+    function o
+        kitty @ set-spacing margin=0
+        command opencode $argv
+        kitty @ set-spacing margin=10
+    end
+
     # Aliases
     alias pamcan pacman
     alias ls 'eza --icons'
@@ -46,7 +58,6 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias cl 'clear && fish'
     alias cd z
     alias g gemini
-    alias n nvim
     alias t tmuxinator
     alias dpip /home/host4/Projects/datalisis/bin/pip
     alias dpy /home/host4/Projects/datalisis/bin/python
