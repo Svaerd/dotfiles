@@ -50,7 +50,9 @@ if status is-interactive # Commands to run in interactive sessions can go here
     end
 
     # Aliases
-    alias pamcan pacman
+    alias clear "printf '\033[2J\033[3J\033[1;1H'" # fix: kitty doesn't clear properly
+    alias celar "printf '\033[2J\033[3J\033[1;1H'"
+    alias claer "printf '\033[2J\033[3J\033[1;1H'"
     alias ls 'eza --icons'
     alias lsa 'eza --icons --all'
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
