@@ -1,0 +1,5 @@
+---
+"workspace:show_command_search": ctrl-r
+"code_view:close_saved_tabs": none
+"workspace:new_tab": ctrl-t
+"code_view:close_all_tabs": none

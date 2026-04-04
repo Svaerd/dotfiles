@@ -74,3 +74,6 @@ if status is-interactive # Commands to run in interactive sessions can go here
     abbr -a ch 'cd ~/.config/hypr/ && '
     abbr -a td tmuxinator datalisis
 end
+
+# Auto-Warpify
+status --is-interactive; and printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish", "uname": "Linux" }}œ' 
