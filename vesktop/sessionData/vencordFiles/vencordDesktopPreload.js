@@ -1,4 +1,4 @@
-// Vencord 50c5124
+// Vencord caba178
 // Standalone: true
 // Platform: Universal
 // Updater Disabled: false

@@ -1,2 +1,23 @@
-2026/01/31-16:59:53.988 1d106d Creating DB /home/host4/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb since it was missing.
-2026/01/31-16:59:53.991 1d106d Reusing MANIFEST /home/host4/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/01-10:15:27.651 8698 Reusing MANIFEST /home/host4/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/01-10:15:27.652 8698 Recovering log #374
+2026/05/01-10:15:27.667 8698 Reusing old log /home/host4/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000374.log 
+2026/05/01-10:15:28.295 8698 Compacting 1@1 + 2@2 files
+2026/05/01-10:15:28.352 8698 Generated table #377@1: 33112 keys, 2218999 bytes
+2026/05/01-10:15:28.370 8698 Generated table #378@1: 7493 keys, 793472 bytes
+2026/05/01-10:15:28.370 8698 Compacted 1@1 + 2@2 files => 3012471 bytes
+2026/05/01-10:15:28.373 8698 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/05/01-10:15:28.373 8698 Delete type=2 #371
+2026/05/01-10:15:28.373 8698 Delete type=2 #372
+2026/05/01-10:15:28.373 8698 Delete type=2 #375
+2026/05/01-10:16:13.854 8699 Level-0 table #380: started
+2026/05/01-10:16:13.879 8699 Level-0 table #380: 783367 bytes OK
+2026/05/01-10:16:13.881 8699 Delete type=0 #374
+2026/05/01-10:16:13.882 8698 Manual compaction at level-0 from '\x00\x13\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/05/01-10:16:13.882 8698 Manual compaction at level-1 from '\x00\x13\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at '\x00\x14\x03\x02\x01*\x00N\x00o\x00t\x00e\x00s\x00/\x00P\x00i\x00c\x00s\x00/\x00P\x00a\x00s\x00t\x00e\x00d\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x002\x000\x002\x006\x000\x002\x002\x007\x001\x003\x000\x000\x002\x004\x00.\x00p\x00n\x00g' @ 2298833 : 0
+2026/05/01-10:16:13.883 8698 Compacting 1@1 + 2@2 files
+2026/05/01-10:16:13.942 8698 Generated table #381@1: 32083 keys, 2218207 bytes
+2026/05/01-10:16:13.952 8698 Generated table #382@1: 2161 keys, 538716 bytes
+2026/05/01-10:16:13.952 8698 Compacted 1@1 + 2@2 files => 2756923 bytes
+2026/05/01-10:16:13.954 8698 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/05/01-10:16:13.954 8698 Delete type=2 #380
+2026/05/01-10:16:13.955 8698 Manual compaction at level-1 from '\x00\x14\x03\x02\x01*\x00N\x00o\x00t\x00e\x00s\x00/\x00P\x00i\x00c\x00s\x00/\x00P\x00a\x00s\x00t\x00e\x00d\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x002\x000\x002\x006\x000\x002\x002\x007\x001\x003\x000\x000\x002\x004\x00.\x00p\x00n\x00g' @ 2298833 : 0 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at (end)

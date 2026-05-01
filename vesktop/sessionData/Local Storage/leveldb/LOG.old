@@ -1,3 +1,15 @@
-2026/02/09-00:21:35.000 12ac6c Reusing MANIFEST /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
-2026/02/09-00:21:35.004 12ac6c Recovering log #4
-2026/02/09-00:21:35.004 12ac6c Reusing old log /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/000004.log 
+2026/04/28-15:23:26.354 157b72 Reusing MANIFEST /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/04/28-15:23:26.357 157b72 Recovering log #523
+2026/04/28-15:23:26.357 157b72 Reusing old log /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/000523.log 
+2026/04/28-23:07:18.462 157b72 Level-0 table #527: started
+2026/04/28-23:07:18.467 157b72 Level-0 table #527: 32354 bytes OK
+2026/04/28-23:07:18.469 157b72 Delete type=0 #523
+2026/04/28-23:07:18.470 157b72 Compacting 4@0 + 1@1 files
+2026/04/28-23:07:18.472 157b72 Generated table #528@0: 60 keys, 32270 bytes
+2026/04/28-23:07:18.472 157b72 Compacted 4@0 + 1@1 files => 32270 bytes
+2026/04/28-23:07:18.474 157b72 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/28-23:07:18.475 157b72 Delete type=2 #518
+2026/04/28-23:07:18.475 157b72 Delete type=2 #520
+2026/04/28-23:07:18.475 157b72 Delete type=2 #522
+2026/04/28-23:07:18.475 157b72 Delete type=2 #524
+2026/04/28-23:07:18.475 157b72 Delete type=2 #527

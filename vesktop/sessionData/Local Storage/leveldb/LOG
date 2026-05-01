@@ -1,3 +1,9 @@
-2026/02/09-00:21:52.624 12af3f Reusing MANIFEST /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
-2026/02/09-00:21:52.628 12af3f Recovering log #4
-2026/02/09-00:21:52.628 12af3f Reusing old log /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/000004.log 
+2026/04/29-22:56:51.649 15a0ba Reusing MANIFEST /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/04/29-22:56:51.656 15a0ba Recovering log #526
+2026/04/29-22:56:51.656 15a0ba Reusing old log /home/host4/.config/vesktop/sessionData/Local Storage/leveldb/000526.log 
+2026/04/29-23:18:28.321 15a070 Level-0 table #531: started
+2026/04/29-23:18:28.345 15a070 Level-0 table #531: 40655 bytes OK
+2026/04/29-23:18:28.347 15a070 Delete type=0 #526
+2026/04/30-09:51:54.206 15a0b9 Level-0 table #533: started
+2026/04/30-09:51:54.210 15a0b9 Level-0 table #533: 19919 bytes OK
+2026/04/30-09:51:54.214 15a0b9 Delete type=0 #530
