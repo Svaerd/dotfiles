@@ -1,0 +1,31 @@
+{
+  "id": "mimeapp-gui",
+  "name": "MimeApp GUI",
+  "version": "1.0.4",
+  "minNoctaliaVersion": "4.1.2",
+  "author": "Mathew-D",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "GUI for inspecting MIME handlers and updating default applications in mimeapps.list (requires python3).",
+  "tags": [
+    "Bar",
+    "Panel",
+    "Utility",
+    "System"
+  ],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "controlCenterWidget": "ControlCenterWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "iconColor": "none"
+    }
+  }
+}

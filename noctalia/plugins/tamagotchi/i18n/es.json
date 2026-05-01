@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "volume": "Volumen",
+    "volume-desc": "Volumen de los efectos de sonido al alimentar, jugar y limpiar.",
+
+    "difficulty": "Dificultad",
+    "difficulty-desc": "Valores más altos hacen que tu mascota requiera más atención.",
+
+    "debug": "Botones de debug",
+    "debug-desc": "Muestra botones para modificar estadísticas manualmente.",
+
+    "percentage": "Porcentaje",
+    "percentage-desc": "Muestra valores porcentuales en las barras de estado.",
+
+    "random": "Eventos aleatorios",
+    "random-desc": "Activa eventos aleatorios que afectan a tu mascota."
+  },
+  "debug": {
+    "action": "Acción",
+    "feed": "-10 Comer",
+    "play": "-10 Jugar",
+    "clean": "-10 Limpiar",
+    "sleep": "-10 Dormir"
+  }
+}

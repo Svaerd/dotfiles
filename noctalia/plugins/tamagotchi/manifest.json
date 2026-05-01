@@ -1,0 +1,32 @@
+{
+  "id": "tamagotchi",
+  "name": "Tamagochi",
+  "version": "1.1.2",
+  "minNoctaliaVersion": "4.6.6",
+  "author": "Joaquin Righetti, Lucia Bollati",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "A lightweight taskbar Tamagotchi that lives and evolves while you use your computer.",
+  "tags": ["Bar", "Fun", "Gaming"],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "hunger": 100,
+      "happiness": 100,
+      "cleanliness": 100,
+      "energy": 100,
+      "volume": 0.5,
+      "difficulty": 50,
+      "showDebug": false,
+      "showPercentage": false
+    }
+  }
+}

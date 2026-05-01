@@ -1,0 +1,89 @@
+{
+  "bar": {
+    "tooltip": "Applications MIME par défaut"
+  },
+  "panel": {
+    "status": {
+      "backendNotReady": "Le chemin du backend n'est pas encore prêt.",
+      "noConflicts": "Aucun type MIME avec plusieurs gestionnaires n'a été trouvé.",
+      "noHandlers": "Aucun gestionnaire MIME n'a été trouvé parmi les fichiers desktop installés.",
+      "updatedDefaultParseError": "Valeur par défaut mise à jour, mais l'analyse de la réponse a échoué : {error}",
+      "updatedDefault": "Valeur par défaut mise à jour pour {mimeType}."
+    },
+    "error": {
+      "parseScanResult": "Échec de l'analyse du résultat du scan : {error}",
+      "scanFailed": "Échec du scan des gestionnaires MIME. Assurez-vous que python3 est installé et disponible dans le PATH.",
+      "scanFailedGeneric": "Échec du scan.",
+      "saveFailed": "Échec de l'enregistrement de l'application par défaut. Assurez-vous que python3 est installé et disponible dans le PATH.",
+      "saveFailedGeneric": "Échec de l'enregistrement de l'application par défaut."
+    },
+    "current": "Actuel : ",
+    "none": "(aucun)",
+    "source": "Source : ",
+    "notConfigured": "(non configuré)",
+    "tab": {
+      "all": "Tous",
+      "common": "Courants",
+      "audio": "Audio",
+      "video": "Vidéo",
+      "application": "Application",
+      "image": "Image",
+      "text": "Texte",
+      "inode": "Système de fichiers",
+      "other": "Autre"
+    },
+    "title": "MimeApp GUI",
+    "refresh": "Actualiser",
+    "subtitle": "Sélectionnez une application par défaut pour chaque type MIME. Les modifications sont enregistrées dans ~/.config/mimeapps.list.",
+    "loading": "Scan des entrées desktop...",
+    "handler": {
+      "label": "Gestionnaire",
+      "description": "Choisissez l'application desktop préférée"
+    },
+    "apply": {
+      "button": "Appliquer",
+      "saving": "Enregistrement..."
+    }
+  },
+  "settings": {
+    "iconColor": {
+      "label": "Couleur de l'icône",
+      "desc": "Couleur de l'icône du widget de la barre."
+    },
+    "ipcCommands": {
+      "label": "Commande IPC",
+      "desc": "Bascule le panneau du plugin via une commande IPC"
+    }
+  },
+  "contextMenu": {
+    "widget-settings": "Paramètres du widget"
+  },
+  "mime": {
+    "http": "Navigateur Web",
+    "https": "Navigateur HTTPS",
+    "mailto": "Client de messagerie",
+    "png": "Visionneuse d'images (.png)",
+    "jpeg": "Visionneuse d'images (.jpg)",
+    "gif": "Visionneuse d'images (.gif)",
+    "mp3": "Lecteur de musique (.mp3)",
+    "flac": "Lecteur de musique (.flac)",
+    "mp4": "Lecteur vidéo (.mp4)",
+    "mkv": "Lecteur vidéo (.mkv)",
+    "text": "Éditeur de texte",
+    "html": "Visionneuse HTML",
+    "pdf": "Lecteur PDF",
+    "word": "Traitement de texte",
+    "spreadsheet": "Tableur",
+    "presentation": "Présentation",
+    "directory": "Gestionnaire de fichiers",
+    "zip": "Gestionnaire d'archives (.zip)",
+    "tar": "Gestionnaire d'archives (.tar)",
+    "gz": "Gestionnaire d'archives (.gz)"
+  },
+  "category": {
+    "internet": "Internet",
+    "multimedia": "Multimédia",
+    "documents": "Documents",
+    "utilities": "Utilitaires"
+  }
+}
