@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "volume": "Ses",
+    "volume-desc": "Besleme, oyun ve temizlik sırasında ses efektlerinin ses düzeyi.",
+
+    "difficulty": "Zorluk",
+    "difficulty-desc": "Değerler yükseldikçe evcil hayvanınızın daha sık bakıma ihtiyacı olur.",
+
+    "debug": "Hata Ayıklama Butonları",
+    "debug-desc": "Test için istatistik değişikliklerini manuel olarak tetiklemek için butonları göster.",
+
+    "percentage": "Yüzde",
+    "percentage-desc": "Her istatistik çubuğunun yanında yüzde değerlerini göster.",
+
+    "random": "Rastgele Olaylar ",
+    "random-desc": "Zamanla evcil hayvanınızı etkileyen rastgele olayları etkinletir."
+  },
+  "debug": {
+    "action": "Eylemler",
+    "feed": "-10 Besleme",
+    "play": "-10 Oyun",
+    "clean": "-10 Temizlik",
+    "sleep": "-10 Uyku"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "hideInactive": false,
+  "iconColor": "none",
+  "directory": "/home/host4/Videos/screenrecord",
+  "filenamePattern": "recording_yyyyMMdd_HHmmss",
+  "frameRate": "60",
+  "audioCodec": "opus",
+  "videoCodec": "h264",
+  "quality": "ultra",
+  "colorRange": "limited",
+  "showCursor": true,
+  "copyToClipboard": false,
+  "audioSource": "both",
+  "videoSource": "screen",
+  "resolution": "original",
+  "replayEnabled": false,
+  "replayDuration": "30",
+  "customReplayDuration": "30",
+  "replayStorage": "ram",
+  "restorePortalSession": false,
+  "customFrameRate": "60"
+}
