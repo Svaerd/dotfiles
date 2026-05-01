@@ -37,17 +37,17 @@ if status is-interactive # Commands to run in interactive sessions can go here
         rm -f -- "$tmp"
     end
 
-    function n
-        kitty @ set-spacing margin=0
-        command nvim $argv
-        kitty @ set-spacing margin=10
-    end
-
-    function o
-        kitty @ set-spacing margin=0
-        command opencode $argv
-        kitty @ set-spacing margin=10
-    end
+    # function n
+    #     kitty @ set-spacing margin=0
+    #     command nvim $argv
+    #     kitty @ set-spacing margin=10
+    # end
+    #
+    # function o
+    #     kitty @ set-spacing margin=0
+    #     command opencode $argv
+    #     kitty @ set-spacing margin=10
+    # end
 
     # Aliases
     alias clear "printf '\033[2J\033[3J\033[1;1H'" # fix: kitty doesn't clear properly
@@ -55,7 +55,6 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias claer "printf '\033[2J\033[3J\033[1;1H'"
     alias ls 'eza --icons'
     alias lsa 'eza --icons --all'
-    alias clear "printf '\033[2J\033[3J\033[1;1H'"
     alias q 'qs -c ii'
     alias cl 'clear && fish'
     alias cd z
@@ -69,11 +68,15 @@ if status is-interactive # Commands to run in interactive sessions can go here
     abbr -a s sudo -E -s
     abbr -a lg lazygit
     abbr -a ys yay -S --needed --noconfirm
+    abbr -a yr yay -Rns
     abbr -a yy yay
     abbr -a cx chmod +x
     abbr -a ch 'cd ~/.config/hypr/ && '
     abbr -a td tmuxinator datalisis
+    abbr -a o opencode
+    abbr -a or opencode run
+    abbr -a n nvim
 end
 
 # Auto-Warpify
-status --is-interactive; and printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish", "uname": "Linux" }}œ' 
+status --is-interactive; and printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish", "uname": "Linux" }}œ'

@@ -1,11 +1,10 @@
 #!/bin/bash
-CONF_DIR="$HOME/.cache/dotfiles/hypr/custom"
+current=$(hyprctl getoption input:touchpad:tap-to-click 2>/dev/null)
 
-if grep -q "tap-to-click = true" "$CONF_DIR/tap-to-click.conf"; then
-    cp "$CONF_DIR/tap-off.conf" "$CONF_DIR/tap-to-click.conf"
-    notify-send "Touchpad" "Tap-to-click: OFF"
+if echo "$current" | grep -q "int: 1"; then
+  hyprctl keyword "input:touchpad:tap-to-click" false
+  notify-send "Touchpad" "Tap-to-click: OFF"
 else
-    cp "$CONF_DIR/tap-on.conf" "$CONF_DIR/tap-to-click.conf"
-    notify-send "Touchpad" "Tap-to-click: ON"
+  hyprctl keyword "input:touchpad:tap-to-click" true
+  notify-send "Touchpad" "Tap-to-click: ON"
 fi
-hyprctl reload
