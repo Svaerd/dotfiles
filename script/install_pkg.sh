@@ -27,6 +27,13 @@ packages=(
   fprintd
   warp-terminal-bin
   obsidian
+  bibata-cursor-theme-bin
+  easyeffect
+  mpv
+  opencode
+  veracrypt
+  linux-wifi-hotspot-bin
+  tailscale
 )
 
 for package in "${packages[@]}"; do
