@@ -1,0 +1,90 @@
+[agents]
+cloud_conversation_storage_enabled = false
+
+[agents.warp_agent]
+
+[agents.warp_agent.active_ai]
+enabled = true
+
+[agents.warp_agent.input]
+nld_in_terminal_enabled = true
+
+[appearance]
+
+[appearance.themes]
+selected_system_themes = {
+  dark = {
+    custom = {
+      name = "Catppuccin",
+      path = "/home/host2/.local/share/warp-terminal/themes/standard/catppuccin.yaml",
+    },
+  },
+  light = "light",
+}
+system_theme = true
+
+[appearance.text]
+font_size = 14.0
+match_ai_font = false
+font_name = "JetBrainsMono Nerd Font"
+notebook_font_size = 14.0
+ai_font_name = "JetBrainsMono Nerd Font"
+
+[appearance.window]
+override_opacity = 86
+zoom_level = 100
+
+[appearance.input]
+input_mode = "waterfall"
+
+[appearance.panes]
+focus_pane_on_hover = true
+should_dim_inactive_panes = true
+
+[appearance.tabs]
+workspace_decoration_visibility = "always_show"
+show_indicators_button = true
+
+[appearance.cursor]
+cursor_display_type = "bar"
+
+[terminal]
+show_terminal_zero_state_block = false
+
+[terminal.input]
+error_underlining_enabled = true
+input_box_type_setting = "universal"
+completions_open_while_typing = true
+
+[session]
+
+[session.new_session_shell_override]
+executable = "/usr/bin/fish"
+
+[system]
+force_x11 = false
+
+[privacy]
+crash_reporting_enabled = false
+telemetry_enabled = false
+
+[privacy.secret_redaction]
+enabled = true
+
+[account]
+is_settings_sync_enabled = true
+
+[notifications]
+toast_duration_secs = 8
+
+[notifications.preferences]
+is_agent_task_completed_enabled = true
+is_long_running_enabled = true
+is_needs_attention_enabled = true
+is_password_prompt_enabled = true
+long_running_threshold = 30
+mode = "enabled"
+play_notification_sound = true
+
+[text_editing]
+vim_mode_enabled = true
