@@ -13,20 +13,6 @@ Item {
         return searchText.startsWith(">au-search")
     }
 
-    function getURL(source, id) {
-        // Returns the url for the package
-        switch(source) {
-            case "system":
-                return "https://archlinux.org/packages/extra/x86_64/" + id
-            case "aur":
-                return "https://aur.archlinux.org/packages/" + id
-            case "flatpak":
-                return "https://flathub.org/en/apps/" + id
-            default:
-                return ""
-        }
-    }
-
     // Return available commands when user types ">"
     function commands() {
         return [
@@ -98,9 +84,7 @@ Item {
                 "isTablerIcon": isTabler,
                 "onActivate": function() {
                     // Open url to the package
-                    var url = getURL(updates[i].source, updates[i].id)
-                    Logger.i("Arch Updater", "Opening " + url)
-                    Qt.openUrlExternally(url)
+                    root.pluginApi.mainInstance.openURL(updates[i].source, updates[i].id)
                 }
             })
         }

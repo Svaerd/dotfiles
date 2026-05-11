@@ -50,10 +50,10 @@ Item {
     implicitHeight: contentHeight
 
     // Hide on empty
-    visible: (root.pluginApi.mainInstance.updateCount + root.pluginApi.mainInstance.flatpakCount) | !(pluginApi.pluginSettings.hideOnEmpty ?? pluginApi.manifest.metadata.defaultSettings.hideOnEmpty)
+    visible: root.pluginApi.mainInstance.updates.length | !(pluginApi.pluginSettings.hideOnEmpty ?? pluginApi.manifest.metadata.defaultSettings.hideOnEmpty)
 
     // Tooltip Text
-    property string tooltipText: root.pluginApi.mainInstance.nameStr + (root.pluginApi.mainInstance.flatpakCount ? "\n\n" : "") + root.pluginApi.mainInstance.flatpakNameStr
+    property string tooltipText: root.pluginApi.mainInstance.systemStr + (root.pluginApi.mainInstance.aurStr ? "\n" + root.pluginApi.mainInstance.aurStr : "") + (root.pluginApi.mainInstance.flatpakStr ? "\n" + root.pluginApi.mainInstance.flatpakStr : "")
     property string tooltipTextTrimmed: root.tooltipText.split("\n").slice(0, 30).join("\n")
 
     // Visual capsule - centered within the full click area
@@ -116,7 +116,7 @@ Item {
                 }
                 NText { // Count
                     visible: !root.pluginApi.mainInstance.refreshing
-                    text: (root.pluginApi.mainInstance.updateCount + root.pluginApi.mainInstance.flatpakCount).toString()
+                    text: (root.pluginApi.mainInstance.updates.length).toString()
                     color: mouseArea.containsMouse ? Color.mOnHover : (root.pluginApi.mainInstance.noctaliaUpdate ? Color.mSecondary : Color.mOnSurface)
                     pointSize: root.barFontSize
                     applyUiScale: false
@@ -132,7 +132,7 @@ Item {
                 spacing: Style.marginS
                 NText { // Count
                     visible: !root.pluginApi.mainInstance.refreshing
-                    text: (root.pluginApi.mainInstance.updateCount + root.pluginApi.mainInstance.flatpakCount).toString()
+                    text: root.pluginApi.mainInstance.updates.length.toString()
                     color: mouseArea.containsMouse ? Color.mOnHover : (root.pluginApi.mainInstance.noctaliaUpdate ? Color.mSecondary : Color.mOnSurface)
                     pointSize: root.barFontSize
                     applyUiScale: false

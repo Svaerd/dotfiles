@@ -31,7 +31,7 @@ DraggableDesktopWidget {
             color: "transparent"
 
             NText {
-                text: (root.pluginApi.mainInstance.updateCount + root.pluginApi.mainInstance.flatpakCount).toString() + " " + pluginApi.trp("desktop.header", root.pluginApi.mainInstance.updateCount + root.pluginApi.mainInstance.flatpakCount)
+                text: (root.pluginApi.mainInstance.updates.length).toString() + " " + pluginApi.trp("desktop.header", root.pluginApi.mainInstance.updates.length)
                 pointSize: Style.fontSizeXL
                 font.weight: Font.Bold
                 color: Color.mOnSurface
@@ -83,9 +83,10 @@ DraggableDesktopWidget {
             id: tableView
             width: root.tableContentWidth
             height: root.implicitHeight - Style.fontSizeXL - Style.fontSizeM - 4 * Style.marginL - 2 * Style.marginXL - 1
-            model: root.pluginApi?.mainInstance?.updates ?? []
+            model: root.pluginApi?.mainInstance?.updates
             clip: true
             spacing: Style.marginXS
+            onContentYChanged: hoverTip.visible = false
 
             delegate: RowLayout {
                 required property var modelData
@@ -189,7 +190,7 @@ DraggableDesktopWidget {
         }
 
         onEntered: {
-            if (pluginApi.pluginSettings.desktopTip) {
+            if (pluginApi.pluginSettings.hoverTip ?? pluginApi.manifest.metadata.defaultSettings.hoverTip) {
                 Logger.d("Arch Updater", "Starting hover tip timer...")
                 hoverTimer.restart()
             }
