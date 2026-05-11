@@ -19,7 +19,12 @@ selected_system_themes = {
       path = "/home/host2/.local/share/warp-terminal/themes/standard/catppuccin.yaml",
     },
   },
-  light = "light",
+  light = {
+    custom_base_16 = {
+      name = "Base16 Material Lighter",
+      path = "/home/host2/.local/share/warp-terminal/themes/base16/base16_material_lighter.yaml",
+    },
+  },
 }
 system_theme = true
 
@@ -32,7 +37,7 @@ ai_font_name = "JetBrainsMono Nerd Font"
 
 [appearance.window]
 override_opacity = 86
-zoom_level = 100
+zoom_level = 110
 
 [appearance.input]
 input_mode = "waterfall"
@@ -55,11 +60,12 @@ show_terminal_zero_state_block = false
 error_underlining_enabled = true
 input_box_type_setting = "universal"
 completions_open_while_typing = true
+alias_expansion_enabled = true
 
 [session]
 
 [session.new_session_shell_override]
-executable = "/usr/bin/fish"
+executable = "/usr/bin/zsh"
 
 [system]
 force_x11 = false
