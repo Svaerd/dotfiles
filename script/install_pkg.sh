@@ -34,6 +34,16 @@ packages=(
   veracrypt
   linux-wifi-hotspot-bin
   tailscale
+  pandoc
+  tree-sitter-cli
+  haskell-language-server
+  fast-tags
+  ghci-dap
+  luarocks
+  distrobox
+  jdk-openjdk
+  android-tools
+  onlyoffice-bin
 )
 
 for package in "${packages[@]}"; do
