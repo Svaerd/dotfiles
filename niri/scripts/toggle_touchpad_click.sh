@@ -1,2 +1,3 @@
 #!/bin/bash
-python3 /home/host4/.config/niri/scripts/toggle_touchpad_click.py
+python3 ~/.config/niri/scripts/toggle_touchpad_click.py
+
