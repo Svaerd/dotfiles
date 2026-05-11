@@ -1,7 +1,7 @@
 {
   "hideInactive": false,
   "iconColor": "none",
-  "directory": "/home/host4/Videos/screenrecord",
+  "directory": "/home/host2/Videos/screenrecord",
   "filenamePattern": "recording_yyyyMMdd_HHmmss",
   "frameRate": "60",
   "audioCodec": "opus",
