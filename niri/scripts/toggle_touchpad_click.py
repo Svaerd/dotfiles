@@ -3,8 +3,9 @@
 import re
 import subprocess
 import sys
+from os.path import expanduser
 
-config_path = "/home/host4/.config/niri/config.kdl"
+config_path = expanduser("~/.config/niri/config.kdl")
 
 with open(config_path, "r") as f:
     content = f.read()
