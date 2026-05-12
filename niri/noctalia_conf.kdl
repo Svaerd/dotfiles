@@ -20,20 +20,21 @@ layer-rule {
 }
 
 // /* Apps: blur them all without xray for a better look */
-// window-rule {
-//   background-effect {
-//     blur true
-//     xray false
-//   }
-// }
-//
-// /* Noctalia: blur everywhere without xray for a better look */
-// layer-rule {
-//   match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
-//   background-effect {
-//     xray false
-//   }
-// }
+window-rule {
+  opacity 0.92
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+/* Noctalia: blur everywhere without xray for a better look */
+layer-rule {
+  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+  background-effect {
+    xray false
+  }
+}
 
 binds {
     // Core Noctalia binds
