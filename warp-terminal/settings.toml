@@ -21,22 +21,22 @@ selected_system_themes = {
   },
   light = {
     custom_base_16 = {
-      name = "Base16 Material Lighter",
-      path = "/home/host2/.local/share/warp-terminal/themes/base16/base16_material_lighter.yaml",
+      name = "Base16 Silk Light",
+      path = "/home/host2/.local/share/warp-terminal/themes/base16/base16_silk_light.yaml",
     },
   },
 }
 system_theme = true
 
 [appearance.text]
-font_size = 14.0
+font_size = 13.0
 match_ai_font = false
 font_name = "JetBrainsMono Nerd Font"
 notebook_font_size = 14.0
 ai_font_name = "JetBrainsMono Nerd Font"
 
 [appearance.window]
-override_opacity = 86
+override_opacity = 87
 zoom_level = 110
 
 [appearance.input]
@@ -55,6 +55,7 @@ cursor_display_type = "bar"
 
 [terminal]
 show_terminal_zero_state_block = false
+osc52_clipboard_access = "write_only"
 
 [terminal.input]
 error_underlining_enabled = true
