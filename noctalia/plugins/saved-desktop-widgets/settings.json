@@ -1,4 +1,12 @@
 {
   "saveWidgets": true,
-  "loadWidgets": true
+  "loadWidgets": true,
+  "monitorWidgets": {
+    "/home/host2/Wallpapers/purple_leaves.png": [
+      {
+        "name": "eDP-1",
+        "widgets": []
+      }
+    ]
+  }
 }
