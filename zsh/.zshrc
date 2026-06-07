@@ -25,6 +25,7 @@ setopt SHARE_HISTORY
 if [[ -o interactive ]]; then
     # No greeting
     unsetopt zsh_greeting 2>/dev/null
+    fastfetch
 
     # Use starship
     eval "$(starship init zsh)"
@@ -76,7 +77,12 @@ fi
 # Auto-Warpify
 printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
 
-
+# GHcup env set up
 [ -f "/home/host2/.ghcup/env" ] && . "/home/host2/.ghcup/env" # ghcup-envexport PATH="/usr/lib/jvm/java-26-openjdk/bin:$PATH"
 
+# kiro IDE
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/host2/.local/bin:$PATH"
