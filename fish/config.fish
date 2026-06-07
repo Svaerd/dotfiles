@@ -20,6 +20,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
 
     # No greeting
     set fish_greeting
+    fastfetch
 
     # Use starship
     starship init fish | source
@@ -79,4 +80,10 @@ if status is-interactive # Commands to run in interactive sessions can go here
 end
 
 # Auto-Warpify
-status --is-interactive; and printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish", "uname": "Linux" }}œ'
+status --is-interactive; and printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish", "uname": "Linux" }}ï¿½'
+
+string match -q "$TERM_PROGRAM" kiro and . (kiro --locate-shell-integration-path fish)
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/host2/.local/bin" $PATH
