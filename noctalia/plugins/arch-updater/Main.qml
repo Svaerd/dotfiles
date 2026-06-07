@@ -96,7 +96,7 @@ Item {
         var url = ""
         switch (source) {
             case "system":
-                checkRepo.run(["sh", "-c", "pacman -Si " + id + " 2>/dev/null | awk 'FNR == 2 {print $3}'"], output => {
+                checkRepo.run(["sh", "-c", "LC_ALL=C pacman -Si " + id + " 2>/dev/null | awk '/^Repository/  {print $3; exit}'"], output => {
                     var repo = output.trim()
                     switch (repo) {
                         case "cachyos-znver4":
@@ -149,14 +149,13 @@ Item {
         var url = ""
         switch (source) {
             case "system":
-                getHomepage.run(["sh", "-c", "pacman -Si " + id + " 2>/dev/null | awk 'FNR == 6 {print $3}'"], output => {
+                getHomepage.run(["sh", "-c", "LC_ALL=C pacman -Si " + id + " 2>/dev/null | awk '/^URL/ {print $3; exit}'"], output => {
                     url = output.trim()
                     Logger.i("Arch Updater", "Opening Homepage (System): " + url)
                     Qt.openUrlExternally(url)
                 })
                 break
             case "aur":
-                //getHomepage.run(["sh", "-c", "paru -Si " + id + " 2>/dev/null | awk 'FNR == 5 {print $3}'"], output => {
                 getHomepage.run(["sh", "-c", (pluginApi.pluginSettings.aurHomepageCmd || pluginApi.manifest.metadata.defaultSettings.aurHomepageCmd).replace("{id}", id)], output => {
                     Logger.i("ASDASD", (pluginApi.pluginSettings.aurHomepageCmd || pluginApi.manifest.metadata.defaultSettings.aurHomepageCmd))
                     Logger.i("ASDASD", (pluginApi.pluginSettings.aurHomepageCmd || pluginApi.manifest.metadata.defaultSettings.aurHomepageCmd).replace("{id}", id))
@@ -166,7 +165,7 @@ Item {
                 })
                 break
             case "flatpak":
-                getHomepage.run(["sh", "-c", "appstreamcli get " + id + " 2>/dev/null | awk 'FNR == 5 {print $2}'"], output => {
+                getHomepage.run(["sh", "-c", "LC_ALL=C appstreamcli get " + id + " 2>/dev/null | awk '/^Homepage/ {print $2}'"], output => {
                     url = output.trim()
                     Logger.i("Arch Updater", "Opening Homepage (Flatpak): " + url)
                     Qt.openUrlExternally(url)
