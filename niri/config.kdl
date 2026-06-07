@@ -6,7 +6,10 @@
 include "noctalia_conf.kdl"
 include "noctalia.kdl"
 
+// Special workspace for my most used apps
 workspace "communications"
+workspace "browser"
+workspace "terminal"
 
 window-rule {
     match app-id=r#"discord|vesktop"#
@@ -20,8 +23,37 @@ window-rule {
     default-column-width { proportion 0.7; }
 }
 
+window-rule {
+    match app-id=r#"zen"#
+    open-on-workspace "browser"
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id=r#"dev.warp.Warp"#
+    open-on-workspace "terminal"
+    default-column-width { proportion 1.0; }
+}
+
+// Window Rules for PIP, make it auto floating with spesific size
+window-rule {
+  match title=r#"Picture-in-Picture"#
+  open-floating true
+  open-focused false
+  default-floating-position x=50 y=30 relative-to="top-left"
+  default-column-width { fixed 400; }
+  default-window-height { fixed 250; }
+}
+
 environment {
   QT_QPA_PLATFORMTHEME "qt6ct"
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
+  QT_QPA_PLATFORM "wayland"
+  // QT_QPA_PLATFORMTHEME "gtk3"
+  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+  XDG_CURRENT_DESKTOP "niri"
+  XDG_SESSION_TYPE "wayland"
+  XDG_MENU_PREFIX "arch-"
 }
 
 // Input device configuration.
@@ -57,7 +89,7 @@ input {
         // drag false
         // drag-lock
         natural-scroll
-        // accel-speed 0.2
+        accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
         // disabled-on-external-mouse
@@ -68,8 +100,8 @@ input {
     mouse {
         // off
         // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
+        accel-speed 0.2
+        accel-profile "flat"
         // scroll-method "no-scroll"
         scroll-method "on-button-down"
         scroll-button 274
@@ -168,9 +200,9 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    // default-column-width { proportion 0.5; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
-    // default-column-width {}
+    default-column-width {}
 
     // By default focus ring and border are rendered as a solid background rectangle
     // behind windows. That is, they will show up through semitransparent windows.
@@ -299,13 +331,19 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
+spawn-at-startup "zapzap"
+spawn-at-startup "syncthing --no-browser"
+spawn-at-startup "zen-browser"
+spawn-at-startup "warp-terminal"
+spawn-at-startup "kbuildsycoca6"
+spawn-at-startup "niri-float-sticky"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 cursor {
@@ -318,7 +356,7 @@ cursor {
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
 // This option will also fix border/focus ring drawing behind some semitransparent windows.
 // After enabling or disabling this, you need to restart the apps for this to take effect.
-// prefer-no-csd
+prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
@@ -353,6 +391,11 @@ window-rule {
     default-column-width {}
 }
 
+// window-rule {
+//   match app-id=r#"^dev.warp.Warp$"#
+//     default-column-width { proportion 1.0; }
+// }
+
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     // This app-id regular expression will work for both:
@@ -381,6 +424,10 @@ window-rule {
     clip-to-geometry true
 }
 
+// ==========
+// Keybinds
+// ==========
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -397,10 +444,10 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal" { spawn "warp-terminal"; }
-    Mod+Return hotkey-overlay-title="Open a Terminal: warp" { spawn-sh "~/.config/niri/scripts/new-warp-tab.sh"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+W hotkey-overlay-title="Run an Application: Zen Browser" { spawn "zen-browser"; }
+    // Mod+T hotkey-overlay-title="Open a Terminal" { spawn "warp-terminal"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "kitty"; }
+    Mod+D hotkey-overlay-title="Run an Application: Obsidian" { spawn "obsidian"; }
+    Mod+W hotkey-overlay-title="Run an Application: Browser" { spawn "zen-browser"; }
     Mod+E hotkey-overlay-title="Run an Application: File Manager" { spawn "dolphin"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
@@ -408,7 +455,7 @@ binds {
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
-    Mod+Escape hotkey-overlay-title="Toggle Touchpad Tap-to-click" {spawn-sh "~/.config/niri/scripts/toggle_touchpad_click.sh"; }
+    Mod+Escape hotkey-overlay-title="Toggle Touchpad Tap-to-click" {spawn-sh "/home/host2/.config/niri/scripts/toggle_touchpad_click.sh"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
@@ -433,6 +480,8 @@ binds {
     // but you need to manually put each argument in separate "" quotes.
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+    Mod+Delete { spawn-sh "shutdown now"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -567,6 +616,8 @@ binds {
 
     Mod+X { spawn-sh "~/.config/niri/scripts/toggle-communications.sh"; }
     Mod+Ctrl+X { move-column-to-workspace "communications"; }
+    Mod+T { focus-workspace "terminal"; }
+    Mod+Ctrl+T { move-column-to-workspace "terminal"; }
 
     Mod+Ctrl+1 { move-column-to-workspace 1; }
     Mod+Ctrl+2 { move-column-to-workspace 2; }
@@ -630,6 +681,9 @@ binds {
     // Move the focused window between the floating and the tiling layout.
     Mod+Alt+Space       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+
+    // Pin (make window sticky) window
+    Mod+P { spawn "niri-float-sticky" "-ipc" "toggle_sticky"; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,

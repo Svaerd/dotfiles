@@ -41,7 +41,8 @@ binds {
     Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+S { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
     Mod+Comma { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
-    Mod+Alt+L {spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend";}
+    Mod+Alt+L {spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
+    Mod+SemiColon {spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
     // Launcher related binds
     Mod+V {spawn-sh "qs -c noctalia-shell ipc call launcher clipboard";}
