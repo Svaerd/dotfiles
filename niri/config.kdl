@@ -729,4 +729,7 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    // Toggles a mirror window onto your secondary screen (e.g., HDMI-A-1)
+    Mod+Alt+P { spawn "wl-mirror" "eDP-1"; }
 }
