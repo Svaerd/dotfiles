@@ -160,7 +160,15 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=0 y=0
+}
+
+output "HDMI-A-1" {
+    off
+    mode "2560x1440@60"
+    scale 1
+    transform "normal"
+    position x=1200 y=0
 }
 
 xwayland-satellite {
