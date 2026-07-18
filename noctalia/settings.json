@@ -30,7 +30,8 @@
             "org.kde.dolphin",
             "org.kde.kdeconnect.app",
             "org.gnome.Nautilus",
-            "dev.warp.Warp"
+            "dev.warp.Warp",
+            "Waydroid"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -84,7 +85,7 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
@@ -163,6 +164,13 @@
                     "textColor": "none",
                     "useMonospaceFont": true,
                     "usePadding": false
+                },
+                {
+                    "defaultSettings": {
+                        "allowPopupOpening": true,
+                        "colorizeByStatus": true
+                    },
+                    "id": "plugin:thinkpad-fan"
                 },
                 {
                     "defaultSettings": {
@@ -279,13 +287,11 @@
                     "id": "plugin:screen-recorder"
                 },
                 {
-                    "deviceNativePath": "__default__",
-                    "displayMode": "graphic",
-                    "hideIfIdle": false,
-                    "hideIfNotDetected": true,
-                    "id": "Battery",
-                    "showNoctaliaPerformance": false,
-                    "showPowerProfiles": false
+                    "defaultSettings": {
+                        "iconColor": "none",
+                        "niriConfigPath": "~/.config/niri/config.kdl"
+                    },
+                    "id": "plugin:display-settings"
                 },
                 {
                     "displayMode": "onhover",
@@ -321,14 +327,31 @@
                     "textColor": "none"
                 },
                 {
-                    "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "none",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": true
+                    "defaultSettings": {
+                        "activeBackend": "qt6-multimedia",
+                        "automationMode": "random",
+                        "automationTime": 300,
+                        "fillMode": "fit",
+                        "mpvSocket": "/tmp/mpv-socket",
+                        "profile": "default",
+                        "volume": 1,
+                        "wallpapersFolder": "~/Pictures/Wallpapers"
+                    },
+                    "id": "plugin:video-wallpaper"
+                },
+                {
+                    "defaultSettings": {
+                        "deviceNativePath": "__default__",
+                        "displayMode": "graphic-clean",
+                        "hideIfIdle": false,
+                        "hideIfNotDetected": true,
+                        "refreshIntervalSeconds": 5,
+                        "showNoctaliaPerformance": false,
+                        "showPowerInBar": true,
+                        "showPowerProfiles": false,
+                        "showTimeInBar": true
+                    },
+                    "id": "plugin:battery-monitor-plus"
                 }
             ]
         }
@@ -501,7 +524,7 @@
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.2,
+        "dimmerOpacity": 0.11,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
@@ -905,7 +928,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "JetBrainsMono Nerd Font",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.74,
+        "panelBackgroundOpacity": 0.9,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
