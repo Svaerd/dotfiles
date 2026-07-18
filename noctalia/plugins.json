@@ -20,16 +20,20 @@
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
-        "c4ed72:hypr-overview": {
+        "battery-and-power-management": {
             "enabled": false,
-            "sourceUrl": "https://github.com/anthonyhab/noctalia-plugins/"
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "battery-monitor-plus": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "catwalk": {
             "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
-        "hyprland-visual-editor": {
-            "enabled": false,
+        "display-settings": {
+            "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "kaomoji-provider": {
@@ -38,6 +42,10 @@
         },
         "keybind-cheatsheet": {
             "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "linux-wallpaperengine-controller": {
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "mawaqit": {
@@ -72,10 +80,6 @@
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
-        "screen-shot-and-record": {
-            "enabled": false,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
         "screen-toolkit": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
@@ -88,14 +92,6 @@
             "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
-        "slowbongo": {
-            "enabled": false,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
-        "special-workspaces": {
-            "enabled": false,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
         "tailscale": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
@@ -104,8 +100,20 @@
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
+        "thinkpad-fan": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
         "timer": {
             "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "video-wallpaper": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "wallcards": {
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         }
     },

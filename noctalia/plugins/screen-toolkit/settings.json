@@ -24,8 +24,8 @@
   "resultHsl": "",
   "colorCapturePath": "",
   "colorCacheBust": 0,
-  "ocrResult": "From this session:\n\n1. Only edit MemberPopup.tsx — you explicitly said no other files.\nI violated this by editing Cardiember.tsx and you caught it: I\nhad to revert.\n\n2. Don't change the popup structure or function — the portal,\nescape-to-close, overflow-Lock, YouTube click must all keep\nworking. I can only change styles/visuals.\n\n3. No Tailwind v4 custom theme tokens — all styling via inline\nStyles or CSS in the «style» tag.\n\n4. Keep the card structure untouched — it gets crawled by a script\nfor member data extraction: changing structure or styles would\nbreak consistency with other members.\n\nFrom the previous session (carried over):\n\n5. Card structure preserved — crawl script reguirement »\nconsistent style warning.\n\n6. Popup structure & function preserved — portal, escape-to-close,\noverflow-lock, YouTube click unchanged.\n\n7. JetBrains Mono » highlight-link pattern unchanged — existing\nfont and link styling kept as-is.",
-  "ocrCapturePath": "/tmp/screen-toolkit-ocr.png",
+  "ocrResult": "",
+  "ocrCapturePath": "",
   "qrResult": "",
   "qrCapturePath": "",
   "translateResult": ""

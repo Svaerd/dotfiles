@@ -1,0 +1,27 @@
+{
+  "activeBackend": "qt6-multimedia",
+  "automationMode": "random",
+  "automationTime": 300,
+  "fillMode": "fit",
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "volume": 1,
+  "wallpapersFolder": "/home/host2/Wallpapers",
+  "thumbCacheReady": true,
+  "eDP-1": {
+    "currentWallpaper": "",
+    "volume": 1,
+    "automation": false,
+    "automationMode": "random",
+    "automationTime": 300,
+    "hardwareAcceleration": false,
+    "profile": "default",
+    "fillMode": "crop",
+    "orientation": 0,
+    "noctaliaWallpaper": "/home/host2/Wallpapers/wallpaperflare.com_wallpaper (1).jpg",
+    "isPlaying": true
+  },
+  "enabled": true,
+  "monitorSpecific": false,
+  "automationCustomTime": []
+}
