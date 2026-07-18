@@ -342,9 +342,10 @@ layout {
 spawn-at-startup "zapzap"
 spawn-at-startup "syncthing --no-browser"
 spawn-at-startup "zen-browser"
-spawn-at-startup "warp-terminal"
 spawn-at-startup "kbuildsycoca6"
 spawn-at-startup "niri-float-sticky"
+spawn-at-startup "tldr -u"
+spawn-at-startup "warp-terminal"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
