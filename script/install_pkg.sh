@@ -1,49 +1,72 @@
 #!/bin/bash
 packages=(
+  7zip
+  android-tools
   bat
+  bibata-cursor-theme-bin
   btop
-  neovim
   cliphist
   cmake
+  distrobox
+  docker
+  docker-compose
+  dolphin
+  easyeffect
+  fast-tags
   fastfetch
   fd
-  fzf
-  gtrash-bin
-  gthumb
-  kitty
-  keyd
-  kdeconnect
-  lazygit
-  lua
-  npm
-  ripgrep
-  wl-clipboard
-  zoxide
-  yazi
-  steam
-  starship
-  vesktop
-  zapzap
   fprintd
-  warp-terminal-bin
-  obsidian
-  bibata-cursor-theme-bin
-  easyeffect
-  mpv
-  opencode
-  veracrypt
-  linux-wifi-hotspot-bin
-  tailscale
-  pandoc
-  tree-sitter-cli
-  haskell-language-server
-  fast-tags
+  fzf
   ghci-dap
-  luarocks
-  distrobox
+  git
+  gparted
+  grim
+  gthumb
+  gtrash-bin
+  haskell-language-server
   jdk-openjdk
-  android-tools
+  kdeconnect
+  keyd
+  kitty
+  lazydocker
+  lazygit
+  linux-wifi-hotspot-bin
+  lua
+  luarocks
+  megasync-bin
+  mpv
+  neovim
+  niri-float-sticky
+  npm
+  obsidian
+  okular
   onlyoffice-bin
+  opencode
+  pandoc-cli
+  podman
+  podman
+  powertop
+  ripgrep
+  starship
+  steam
+  syncthing
+  tailscale
+  tlp
+  tlp-pd
+  tree-sitter-cli
+  ttf-jetbrains-mono-nerd
+  unzip
+  veracrypt
+  vesktop
+  vesktop
+  warp-terminal-bin
+  wget
+  wl-clipboard
+  wl-mirror
+  yazi
+  zapzap
+  zen-browser-bin
+  zoxide
 )
 
 for package in "${packages[@]}"; do
