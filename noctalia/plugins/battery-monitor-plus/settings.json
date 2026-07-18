@@ -1,0 +1,11 @@
+{
+  "displayMode": "graphic",
+  "deviceNativePath": "__default__",
+  "showPowerProfiles": true,
+  "showNoctaliaPerformance": true,
+  "hideIfNotDetected": true,
+  "hideIfIdle": false,
+  "refreshIntervalSeconds": 3,
+  "showPowerInBar": false,
+  "showTimeInBar": true
+}
