@@ -69,28 +69,29 @@ layer-rule {
 
 binds {
     // Core Noctalia binds
-    Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Mod+S { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
-    Mod+Comma { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
-    Mod+Alt+L {spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
-    Mod+SemiColon {spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Comma { spawn-sh "noctalia msg settings-toggle"; }
+    // Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
+    Mod+Alt+L { spawn-sh "noctalia msg session lock-and-suspend"; }
+    Mod+SemiColon { spawn-sh "noctalia msg panel-toggle session"; }
 
     // Launcher related binds
-    Mod+V {spawn-sh "qs -c noctalia-shell ipc call launcher clipboard";}
-    Mod+Period {spawn-sh "qs -c noctalia-shell ipc call launcher emoji";}
+    Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Period { spawn-sh "noctalia msg panel-toggle launcher /emo"; }
 
     // Notification
-    Mod+N {spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory";}
-    Mod+Shift+N {spawn-sh "qs -c noctalia-shell ipc call notifications toggleDND";}
-    
-    // Toggle bar & widgets
-    Ctrl+Super+R {spawn-sh "killall ags agsv1 gjs ydotool qs quickshell; qs -c noctalia-shell &";}
+    Mod+N { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
+    Mod+Shift+N { spawn-sh "noctalia msg notification-dnd-toggle"; }
 
+    // Toggle bar & widgets
+    Ctrl+Super+R { spawn-sh "killall ags agsv1 gjs ydotool qs quickshell; noctalia msg panel-toggle launcher"; }
 
     // Audio & Brightness
-    XF86AudioRaiseVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "increase"; }
-    XF86AudioLowerVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-    XF86AudioMute { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
-    XF86MonBrightnessUp { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "increase"; }
-    XF86MonBrightnessDown { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+    XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute { spawn-sh "noctalia msg volume-mute"; }
+    XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 }
+
