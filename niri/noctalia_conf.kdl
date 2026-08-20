@@ -27,6 +27,12 @@ layer-rule {
   place-within-backdrop true
 }
 
+// For laptop lids
+switch-events {
+    lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
+}
+
+//===BLUR===//
 // /* Apps: blur them all without xray for a better look */
 window-rule {
   opacity 0.90
