@@ -1,5 +1,7 @@
 ---
+"input:open_completion_suggestions": tab
 "workspace:show_command_search": ctrl-r
+"code_view:close_all_tabs": none
 "code_view:close_saved_tabs": none
 "workspace:new_tab": ctrl-t
-"code_view:close_all_tabs": none
+"workspace:toggle_keybindings_page": ctrl-shift-?
