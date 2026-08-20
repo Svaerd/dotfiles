@@ -29,11 +29,18 @@ layer-rule {
 
 // /* Apps: blur them all without xray for a better look */
 window-rule {
-  opacity 0.92
+  opacity 0.90
   background-effect {
     blur true
     xray false
   }
+}
+
+blur {
+  passes 3        // more passes = stronger blur (default: 3)
+  offset 3.5      // sample distance per pass (default: 3.0)
+  noise 0.03      // grain overlay (default: 0.02)
+  saturation 1.0  // color saturation boost (default: 1.5)
 }
 
 /* Noctalia: blur everywhere without xray for a better look */
@@ -43,6 +50,16 @@ layer-rule {
     xray false
   }
 }
+
+/* Enable blur on noctalia's window switcher and disable xray. */
+layer-rule {
+  match namespace="noctalia-window-switcher"
+  background-effect {
+    blur true
+    xray false
+  }
+}
+//========//
 
 binds {
     // Core Noctalia binds
