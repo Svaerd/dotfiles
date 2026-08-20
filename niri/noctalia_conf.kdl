@@ -95,3 +95,20 @@ binds {
     XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 }
 
+recent-windows {
+    highlight {
+        active-color "#cba6f7"
+        urgent-color "#f38ba8"
+        padding 7
+        corner-radius 10
+    }
+    previews {
+      max-scale 0.2
+    }
+    binds {
+      Mod+Tab       { next-window       scope="workspace"; }
+      Mod+Shift+Tab { previous-window   scope="workspace"; }
+      Alt+Tab       { next-window       scope="all"; }
+      Alt+Shift+Tab { previous-window   scope="all"; }
+    }
+}
