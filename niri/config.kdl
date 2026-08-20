@@ -454,10 +454,10 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    // Mod+T hotkey-overlay-title="Open a Terminal" { spawn "warp-terminal"; }
+    Mod+W hotkey-overlay-title="Open a Terminal" { spawn "warp-terminal"; }
     Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: Obsidian" { spawn "obsidian"; }
-    Mod+W hotkey-overlay-title="Run an Application: Browser" { spawn "zen-browser"; }
+    Mod+Z hotkey-overlay-title="Run an Application: Browser" { spawn "zen-browser"; }
     Mod+E hotkey-overlay-title="Run an Application: File Manager" { spawn "dolphin"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
