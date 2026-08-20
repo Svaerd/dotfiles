@@ -10,45 +10,43 @@ enabled = true
 nld_in_terminal_enabled = true
 
 [appearance]
+spacing = "normal"
 
 [appearance.themes]
 selected_system_themes = {
-  dark = {
-    custom = {
-      name = "Catppuccin",
-      path = "/home/host2/.local/share/warp-terminal/themes/standard/catppuccin.yaml",
-    },
-  },
-  light = {
-    custom_base_16 = {
-      name = "Base16 Silk Light",
-      path = "/home/host2/.local/share/warp-terminal/themes/base16/base16_silk_light.yaml",
-    },
-  },
+  dark = { custom = { name = "Tokyo Night", path = "standard/tokyo_night.yaml" } },
+  light = { custom_base_16 = { name = "Base16 Silk Light", path = "base16/base16_silk_light.yaml" } },
 }
 system_theme = true
 
 [appearance.text]
-font_size = 13.0
+font_size = 14.0
 match_ai_font = false
 font_name = "JetBrainsMono Nerd Font"
 notebook_font_size = 14.0
 ai_font_name = "JetBrainsMono Nerd Font"
+ligature_rendering_enabled = true
 
 [appearance.window]
-override_opacity = 87
-zoom_level = 110
+override_opacity = 100
+zoom_level = 100
 
 [appearance.input]
 input_mode = "waterfall"
 
 [appearance.panes]
 focus_pane_on_hover = true
-should_dim_inactive_panes = true
+should_dim_inactive_panes = false
 
 [appearance.tabs]
 workspace_decoration_visibility = "always_show"
 show_indicators_button = true
+
+[appearance.tabs.header_toolbar_chip_selection]
+
+[appearance.tabs.header_toolbar_chip_selection.custom]
+left = ["tools_panel"]
+right = ["code_review", "notifications_mailbox"]
 
 [appearance.cursor]
 cursor_display_type = "bar"
@@ -69,7 +67,8 @@ alias_expansion_enabled = true
 executable = "/usr/bin/zsh"
 
 [system]
-force_x11 = false
+force_x11 = true
+prefer_low_power_gpu = false
 
 [privacy]
 crash_reporting_enabled = false
