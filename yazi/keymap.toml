@@ -148,7 +148,7 @@ keymap = [
 	{ on = [ "g", "p" ],       run = "cd ~/Projects/",           desc = "Go to Projects directory" },
 	{ on = [ "g", "t" ],       run = "cd /tmp",                 desc = "Go to the temporary directory" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive",        desc = "Go to a directory interactively" },
-    { on = [ "g", "m" ],       run = "cd ~/my-simple-hyprland/",        desc = "Go to the dotfiles dir" },
+    { on = [ "g", "m" ],       run = "cd ~/.cache/dotfiles/",        desc = "Go to the dotfiles dir" },
 	{ on = [ "g", "s" ],       run = "cd ~/Pictures/Screenshots/",      desc = "Go to the screenshot dir" },
     { on = [ "g", "i" ],       run = "cd ~/Documents/its/",             desc = "Go to ITS dir" },
 
