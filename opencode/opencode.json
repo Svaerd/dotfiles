@@ -1,0 +1,8 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "@warp-dot-dev/opencode-warp",
+    "./plugins/caveman/plugin.js"
+    // "mskadu/opencode-all-sessions"
+  ]
+}
