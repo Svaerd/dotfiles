@@ -57,6 +57,11 @@ layer-rule {
   }
 }
 
+window-rule {
+  match app-id=r#"^dev.noctalia.Noctalia$"#
+  draw-border-with-background false
+}
+
 /* Enable blur on noctalia's window switcher and disable xray. */
 layer-rule {
   match namespace="noctalia-window-switcher"
