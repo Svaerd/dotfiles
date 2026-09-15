@@ -164,11 +164,16 @@ output "eDP-1" {
 }
 
 output "HDMI-A-1" {
-    off
     mode "2560x1440@60"
     scale 1
     transform "normal"
     position x=1200 y=0
+}
+
+window-rule {
+    match app-id="at.yrlf.wl_mirror"
+    open-on-output "HDMI-A-1"
+    open-fullscreen true
 }
 
 xwayland-satellite {
@@ -731,5 +736,5 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 
     // Toggles a mirror window onto your secondary screen (e.g., HDMI-A-1)
-    Mod+Alt+P { spawn "wl-mirror" "eDP-1"; }
+    Mod+Alt+P { spawn "sh" "-c" "pkill -x wl-mirror || wl-mirror eDP-1"; }
 }
