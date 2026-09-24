@@ -1,0 +1,10 @@
+[Unit]
+Description=keyd mode toggle notifications
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.cache/dotfiles/keyd/keyd-mode-notify
+Restart=always
+
+[Install]
+WantedBy=graphical-session.target
