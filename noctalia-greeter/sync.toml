@@ -1,0 +1,65 @@
+# noctalia-greeter sync.toml (UI + Sync; not managed by Nix)
+# [session] last, [session.power] suspend/reboot/shutdown, [[session.actions]] action/command/label/glyph
+# [appearance] scheme, theme_mode, corner_radius_scale, font_family
+# [appearance.palette] full color role table, [appearance.wallpaper]/[appearance.wallpapers.<connector>]
+# [output] layout/transforms
+
+[appearance]
+corner_radius_scale = 1.0
+font_family = "JetBrainsMono Nerd Font"
+scheme = "Synced"
+theme_mode = "dark"
+
+    [appearance.palette]
+    error = "#F38BA8"
+    hover = "#94E2D5"
+    on_error = "#11111B"
+    on_hover = "#11111B"
+    on_primary = "#11111B"
+    on_secondary = "#11111B"
+    on_surface = "#CDD6F4"
+    on_surface_variant = "#A3B4EB"
+    on_tertiary = "#11111B"
+    outline = "#434658"
+    primary = "#CBA6F7"
+    secondary = "#FAB387"
+    shadow = "#11111B"
+    surface = "#1E1E2E"
+    surface_variant = "#313244"
+    tertiary = "#94E2D5"
+
+    [appearance.wallpaper]
+    fill_mode = "crop"
+    path = "/var/lib/noctalia-greeter/wallpaper.png"
+
+    [appearance.wallpapers.eDP-1]
+    fill_mode = "crop"
+    path = "/var/lib/noctalia-greeter/wallpaper-eDP-1.png"
+
+[output]
+transforms = "eDP-1:normal"
+
+[session]
+last = "Niri"
+
+    [[session.actions]]
+    action = "lock"
+
+    [[session.actions]]
+    action = "logout"
+
+    [[session.actions]]
+    action = "reboot"
+
+    [[session.actions]]
+    action = "shutdown"
+
+    [[session.actions]]
+    action = "command"
+    command = "wl-mirror HDMI-A-1"
+    label = "Mirror"
+
+    [[session.actions]]
+    action = "command"
+    command = "niri msg action power-off-monitors"
+    label = "Turn Off Monitor"
