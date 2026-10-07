@@ -1,36 +1,37 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
+vim.g.mapleader = " "
 
--- -- Function to apply transparency settings globally
--- local function set_transparency()
--- 	vim.cmd([[
--- hi Normal guibg=NONE ctermbg=NONE
--- hi NormalFloat guibg=NONE ctermbg=NONE
--- hi NormalNC guibg=NONE ctermbg=NONE
--- hi SignColumn guibg=NONE ctermbg=NONE
--- hi StatusLine guibg=NONE ctermbg=NONE
--- hi StatusLineNC guibg=NONE ctermbg=NONE
--- hi VertSplit guibg=NONE ctermbg=NONE
--- hi TabLine guibg=NONE ctermbg=NONE
--- hi TabLineFill guibg=NONE ctermbg=NONE
--- hi TabLineSel guibg=NONE ctermbg=NONE
--- hi Pmenu guibg=NONE ctermbg=NONE
--- hi PmenuSel guibg=NONE ctermbg=NONE
--- hi NvimTreeNormal guibg=NONE ctermbg=NONE
--- hi NeoTreeNormal guibg=NONE ctermbg=NONE
--- hi NeoTreeNormalNC guibg=NONE ctermbg=NONE
--- hi NeoTreeWinSeparator guibg=NONE ctermbg=NONE
--- hi NeoTreeEndOfBuffer guibg=NONE ctermbg=NONE
--- hi EndOfBuffer guibg=NONE ctermbg=NONE
--- hi WhichKey guibg=NONE ctermbg=NONE
--- ]])
--- end
---
--- -- Apply transparency settings initially
--- set_transparency()
---
--- -- Reapply transparency on buffer enter
--- vim.api.nvim_create_autocmd("BufEnter", {
--- 	pattern = "*",
--- 	callback = set_transparency,
--- })
+-- bootstrap lazy and all plugins
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+
+if not vim.uv.fs_stat(lazypath) then
+  local repo = "https://github.com/folke/lazy.nvim.git"
+  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+end
+
+vim.opt.rtp:prepend(lazypath)
+
+local lazy_config = require "configs.lazy"
+
+-- load plugins
+require("lazy").setup({
+  {
+    "NvChad/NvChad",
+    lazy = false,
+    branch = "v2.5",
+    import = "nvchad.plugins",
+  },
+
+  { import = "plugins" },
+}, lazy_config)
+
+-- load theme
+dofile(vim.g.base46_cache .. "defaults")
+dofile(vim.g.base46_cache .. "statusline")
+
+require "options"
+require "autocmds"
+
+vim.schedule(function()
+  require "mappings"
+end)
