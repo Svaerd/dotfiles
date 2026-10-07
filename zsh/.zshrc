@@ -72,6 +72,7 @@ if [[ -o interactive ]]; then
     alias o='opencode'
     alias or='opencode run'
     alias n='nvim'
+    # alias nm=`NVIM_APPNAME=nvim-MagicVim nvim`
 fi
 
 # Auto-Warpify
