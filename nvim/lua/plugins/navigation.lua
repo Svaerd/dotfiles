@@ -25,7 +25,7 @@ return {
     "MagicDuck/grug-far.nvim",
     keys = {
       {
-        "<leader>prr",
+        "<leader>rr",
         function()
           require("grug-far").open()
         end,
@@ -33,7 +33,7 @@ return {
         desc = "refactor",
       },
       {
-        "<leader>pra",
+        "<leader>rA",
         function()
           require("grug-far").open { engine = "astgrep" }
         end,
@@ -41,7 +41,7 @@ return {
         desc = "refactor (ast-grep)",
       },
       {
-        "<leader>prw",
+        "<leader>rw",
         function()
           require("grug-far").open { prefills = { search = vim.fn.expand "<cword>" } }
         end,
@@ -49,7 +49,7 @@ return {
         desc = "refactor word",
       },
       {
-        "<leader>prW",
+        "<leader>rW",
         function()
           require("grug-far").open {
             prefills = { search = vim.fn.expand "<cword>", paths = vim.fn.expand "%" },
@@ -59,7 +59,7 @@ return {
         desc = "refactor in file",
       },
       {
-        "<leader>prf",
+        "<leader>rf",
         function()
           require("grug-far").open { prefills = { paths = vim.fn.expand "%" } }
         end,
@@ -150,7 +150,7 @@ return {
         desc = "prev todo",
       },
       {
-        "<leader>st",
+        "<leader>ft",
         "<cmd>TodoTelescope<cr>",
         desc = "todos",
       },
@@ -213,12 +213,22 @@ return {
     cmd = "WhichKey",
     opts = {
       spec = {
-        { "<leader>p", group = "project" },
-        { "<leader>pr", group = "refactor" },
-        { "<leader>y", group = "yazi" },
+        -- Main groups
         { "<leader>a", group = "ai" },
-        { "<leader>o", group = "opencode" },
+        { "<leader>b", group = "buffer" },
         { "<leader>c", group = "code" },
+        { "<leader>f", group = "find/telescope" },
+        { "<leader>g", group = "git" },
+        { "<leader>L", group = "lsp actions" },
+        { "<leader>o", group = "opencode" },
+        { "<leader>p", group = "project" },
+        { "<leader>t", group = "terminal" },
+        { "<leader>u", group = "ui/toggles" },
+        { "<leader>y", group = "yazi" },
+        { "<leader>pp", group = "npm" },
+        { "<leader>r", group = "refactor" },
+
+        -- Specific mappings defined elsewhere
         { "<leader>cs", desc = "snippets" },
         { "<leader>cu", desc = "toggle symbol usage" },
         { "ga", desc = "align" },
@@ -226,18 +236,16 @@ return {
         { "<C-a>", desc = "increment" },
         { "<C-x>", desc = "decrement" },
         { "<leader>l", desc = "lint buffer" },
+
+        -- Existing Git mappings
         { "<leader>gD", desc = "diffview" },
         { "<leader>gd", desc = "file history" },
         { "<leader>gS", desc = "git status" },
         { "<leader>gL", desc = "yank git url" },
-        { "<leader>st", desc = "todo comments" },
+
+        { "<leader>ft", desc = "todo comments" },
         { "<leader>D", desc = "sqlit" },
         { "<leader>cv", desc = "tailwind values" },
-        { "<leader>pp", group = "npm" },
-        -- Searchable replacement for the NvChad cheatsheet. The cheatsheet
-        -- draws every entry as a virt_text overlay on blank buffer lines, so
-        -- `/` there always reports "pattern not found"; this is the same
-        -- keymap data as a pickable list.
         { "<leader>?", desc = "find keymaps" },
       },
     },

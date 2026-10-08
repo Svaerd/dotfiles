@@ -6,7 +6,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "tokyonight",
+  theme = "catppuccin",
+  theme_toggle = { "tokyonight", "catppuccin" },
 
   hl_override = {
     Comment = { italic = true },
@@ -14,11 +15,33 @@ M.base46 = {
   },
 }
 
-M.nvdash = { load_on_startup = true }
+M.nvdash = {
+  load_on_startup = true,
+  header = {
+    "                      ",
+    "  ▄▄         ▄ ▄▄▄▄▄▄▄",
+    "▄▀███▄     ▄██ █████▀ ",
+    "██▄▀███▄   ███        ",
+    "███  ▀███▄ ███        ",
+    "███    ▀██ ███        ",
+    "███      ▀ ███        ",
+    "▀██ █████▄▀█▀▄██████▄ ",
+    "  ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀",
+    "                      ",
+    "  Powered By  eovim ",
+    "                      ",
+  },
+}
+
 M.ui = {
   tabufline = {
     lazyload = false,
   },
+}
+
+M.cheatsheet = {
+  theme = "grid", -- simple/grid
+  excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
 }
 
 return M
