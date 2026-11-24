@@ -58,6 +58,9 @@ if [[ -o interactive ]]; then
     alias t='tmuxinator'
     alias dpip='/home/host4/Projects/datalisis/bin/pip'
     alias dpy='/home/host4/Projects/datalisis/bin/python'
+    alias packettracer="QT_QPA_PLATFORM=xcb packettracer"
+    alias rm='gtrash put'
+    alias rr='gtrash restore'
 
     # Abbreviations (converted to aliases - for true fish-like abbreviations, use zsh-abbr plugin)
     alias fan="sudo echo 'level ' | sudo tee /proc/acpi/ibm/fan "
@@ -76,14 +79,16 @@ if [[ -o interactive ]]; then
 fi
 
 # Auto-Warpify
-printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
+[[ -o interactive && "$TERM_PROGRAM" == "WarpTerminal" ]] && printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
+
+# printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
 
 # GHcup env set up
-[ -f "/home/host2/.ghcup/env" ] && . "/home/host2/.ghcup/env" # ghcup-envexport PATH="/usr/lib/jvm/java-26-openjdk/bin:$PATH"
-
-# kiro IDE
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
-
+[ -f "/home/host2/.ghcup/env" ] && . "/home/host2/.ghcup/env" # ghcup-env
+export PATH="/usr/lib/jvm/java-26-openjdk/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/home/host2/.local/bin:$PATH"
+
+# opencode
+export PATH=/home/host2/.opencode/bin:$PATH

@@ -10,7 +10,7 @@ enabled = true
 nld_in_terminal_enabled = true
 
 [appearance]
-spacing = "normal"
+spacing = "compact"
 
 [appearance.themes]
 selected_system_themes = {
@@ -29,7 +29,7 @@ ligature_rendering_enabled = true
 
 [appearance.window]
 override_opacity = 100
-zoom_level = 100
+zoom_level = 110
 
 [appearance.input]
 input_mode = "waterfall"
@@ -45,11 +45,14 @@ show_indicators_button = true
 [appearance.tabs.header_toolbar_chip_selection]
 
 [appearance.tabs.header_toolbar_chip_selection.custom]
-left = ["tools_panel"]
+left = ["tabs_panel", "tools_panel"]
 right = ["code_review", "notifications_mailbox"]
 
 [appearance.cursor]
 cursor_display_type = "bar"
+
+[appearance.vertical_tabs]
+enabled = false
 
 [terminal]
 show_terminal_zero_state_block = false
@@ -57,9 +60,10 @@ osc52_clipboard_access = "write_only"
 
 [terminal.input]
 error_underlining_enabled = true
-input_box_type_setting = "universal"
+input_box_type_setting = "classic"
 completions_open_while_typing = true
 alias_expansion_enabled = true
+honor_ps1 = true
 
 [session]
 
@@ -94,3 +98,8 @@ play_notification_sound = true
 
 [text_editing]
 vim_mode_enabled = true
+
+[warpify]
+
+[warpify.ssh]
+ssh_extension_install_mode = "never_install"
