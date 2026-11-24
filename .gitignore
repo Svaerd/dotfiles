@@ -1,0 +1,23 @@
+# App caches and runtime state
+obsidian/
+vesktop/
+fish/fish_variables
+
+# Opencode local runtime state
+opencode/opencode-quota/
+opencode/.caveman-active
+opencode/cli.json
+opencode/service.json
+
+# Electron / browser / generic cache artifacts
+Cache/
+Code Cache/
+GPUCache/
+IndexedDB/
+Local Storage/
+Session Storage/
+blob_storage/
+*.log
+*.ldb
+*.asar
+.DS_Store
