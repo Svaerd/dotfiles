@@ -35,6 +35,8 @@ map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
 map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
 map({ "n", "v" }, "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
+map("n", "<leader>|", "<cmd>vsplit<CR>", { desc = "Split vertical" })
+map("n", "<leader>-", "<cmd>split<CR>", { desc = "Split horizontal" })
 
 -------------------------------------------------------------------------------
 -- LEADER GROUPS (LazyVim / AstroNvim Style)

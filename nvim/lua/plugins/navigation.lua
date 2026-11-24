@@ -76,6 +76,8 @@ return {
     event = "VeryLazy",
     config = function()
       vim.g.rooter_patterns = {
+        "sketch.yaml",
+        ".arduino_config.lua",
         "pnpm-workspace.yaml",
         "turbo.json",
         "nx.json",

@@ -52,7 +52,7 @@ return {
     config = function()
       require("mason-lspconfig").setup {
         ensure_installed = require("configs.lspconfig").servers,
-        automatic_enable = { exclude = { "copilot" } },
+        automatic_enable = { exclude = { "copilot", "elixirls" } },
       }
     end,
   },

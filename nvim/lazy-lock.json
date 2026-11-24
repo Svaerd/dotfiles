@@ -1,4 +1,6 @@
 {
+  "Arduino-Nvim": { "branch": "main", "commit": "af00ff33480942333832f1af7cbc37ec81e1e6fd" },
+  "LazyVim": { "branch": "main", "commit": "301a3f71007c4aa5da5dab82f1a7a08389091224" },
   "LuaSnip": { "branch": "master", "commit": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24" },
   "NvChad": { "branch": "v2.5", "commit": "add44b952d631981614bbb8cfc6f7002f296dfe6" },
   "auto-save.nvim": { "branch": "main", "commit": "979b6c82f60cfa80f4cf437d77446d0ded0addf0" },

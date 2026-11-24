@@ -39,6 +39,19 @@ function M.setup()
   -- more, which improves server-side completions. vim.lsp.config merges, so
   -- on_init and the rest of nvChad's defaults survive this call.
   vim.lsp.config("*", { capabilities = require("blink.cmp").get_lsp_capabilities() })
+  vim.lsp.config("cssls", {
+    settings = {
+      css = { validate = true, lint = { unknownAtRules = "ignore" } },
+      scss = { validate = true, lint = { unknownAtRules = "ignore" } },
+      less = { validate = true, lint = { unknownAtRules = "ignore" } },
+    },
+  })
+  vim.lsp.config("html", {
+    settings = {
+      html = { validate = true },
+      css = { validate = false },
+    },
+  })
 
   -- lua_ls: let stylua own formatting, and let lazydev manage the workspace
   -- library instead of hardcoding nvChad's paths.
