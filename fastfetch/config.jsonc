@@ -10,8 +10,8 @@
     "separator": "",
   },
   "logo": {
-    "type": "auto",
-    "source": "~/.config/fastfetch/logo.png",
+    "type": "command-raw",
+    "source": "bash $HOME/.config/fastfetch/logo.sh",
     "width": 20,
     "height": 14,
     "padding": {

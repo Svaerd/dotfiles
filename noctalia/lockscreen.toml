@@ -1,0 +1,14 @@
+[lockscreen_widgets]
+enabled = true
+
+[lockscreen_widgets.widget.clock_main]
+type     = "clock"
+output   = "DP-1"
+cx         = 1600.0
+cy         = 120.0
+box_width  = 360.0
+box_height = 120.0
+rotation   = 0.0
+
+[lockscreen_widgets.widget.clock_main.settings]
+format = "{:%H:%M}"
