@@ -1,0 +1,17 @@
+{
+  "name": "test-driven-development",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "f180e97d0890a6310c60fddf3f85c87d0456874b52db1b29741f258f22d2604f",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "8a24e3618426467888d7220e8be20ae82fd702ce9d37b0c816b5df2a41ed4b21",
+    "UPSTREAM.md": "8151f1721d4780c1ebfc4b8faa14879e9f4c6eecd84b7e9e049f86391742e029",
+    "references/testing-patterns.md": "f0bf05acd0edcadc27297ad5b74f104c8103ccfedba1a05cd6d6ae4af8364c56"
+  }
+}

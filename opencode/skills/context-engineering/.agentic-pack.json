@@ -1,0 +1,16 @@
+{
+  "name": "context-engineering",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "20d7c94d6f360d7e356627db781176a7c2df0389d8b0ae15936202d7ed8d8822",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "f34b58273ed4f8197f8316522625caab8247c411bbfc5910963227687b2fd640",
+    "UPSTREAM.md": "e8011589b062f53029361c7a17fe1a105cbf58c1429871cac1d2a185b8c5b98f"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ponytail-review",
+  "pack": "behavior",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "fetch",
+  "source": "ponytail",
+  "repo": "https://github.com/DietrichGebert/ponytail",
+  "commit": "c982cd411abb53323c4baa1baa3c2f020b8d0b08",
+  "license": "MIT",
+  "fingerprint": "e18e16e7a52e2034106899ebef72b2de0d3b5a0060601f8b996ec6f3e0aafc1a",
+  "files": {
+    "LICENSE": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+    "SKILL.md": "7f8bfd0da3ba7c6fe0cd0de53e6f910adfef52166c6e99d7fa4de3360650b9b6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "web-design-guidelines",
+  "pack": "design",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "vendored",
+  "source": "web-interface-guidelines",
+  "repo": "https://github.com/vercel-labs/web-interface-guidelines",
+  "commit": "e3d624baaf29dc1fc645aff3e38f03e564d2d6b1",
+  "license": "MIT",
+  "fingerprint": "654113e9f4d888ee8849eb37f2307e2c5322f2f12b34130ee2eff9b0bd1edb3e",
+  "files": {
+    "SKILL.md": "b61458636d32a4b4b606360ce5faa072013a2064652efc0b1f4156fff128747a",
+    "UPSTREAM.md": "af205024464645f2f005de1164847c08bc8969b40709f0b28a76da5a07cbcada",
+    "references/LICENSE-vercel-web-interface-guidelines": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2",
+    "references/web-interface-guidelines.md": "5a775e6411f790f518dbc9c1fa7c50a89e6873502d9a3530a6eb223a590bcfe8"
+  }
+}

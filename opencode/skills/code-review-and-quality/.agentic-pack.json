@@ -1,0 +1,18 @@
+{
+  "name": "code-review-and-quality",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "16ffdf6514139a568f9afcfbfa7fc7a9eb00b9cf22ed8e8c66005576af039aba",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "e51efb9f2ee6d8b0c3441076b9243dbb9332972d3fa6629c5e9eb6aa6c0f268c",
+    "UPSTREAM.md": "1f236a91c8ddbb9c9c62e5d00bcbcfa541e51e6cf32cbfbfe5cfddbba2b3c598",
+    "references/performance-checklist.md": "4d8fb8c5e784545bf4d3d287f7dd96659cdaf910b4d5a9a108ec2a02e2845560",
+    "references/security-checklist.md": "032375322774f8ac573844f1b62e6910f97090feddd77b9e7b66426f36637eab"
+  }
+}

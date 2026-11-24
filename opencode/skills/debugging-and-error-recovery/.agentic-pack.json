@@ -1,0 +1,16 @@
+{
+  "name": "debugging-and-error-recovery",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "5c84c8b69bc1b84c0947bb16806aad6e310e4afd7acff303a7663d3ef6ad829f",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "ef017ddd1ceaf9dca085207c4bd772f7b4ecd1f4b8c79d364cbf8fde6fc5149a",
+    "UPSTREAM.md": "cbfefbc2e9a7fea06fd1b7b3af894866669ec193b2e610cd8d8026694f932505"
+  }
+}

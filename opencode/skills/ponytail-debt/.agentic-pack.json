@@ -1,0 +1,15 @@
+{
+  "name": "ponytail-debt",
+  "pack": "behavior",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "fetch",
+  "source": "ponytail",
+  "repo": "https://github.com/DietrichGebert/ponytail",
+  "commit": "c982cd411abb53323c4baa1baa3c2f020b8d0b08",
+  "license": "MIT",
+  "fingerprint": "2234ee368bf3f09c6663d7c5ac0a6ba785eb2f13b6f34f5dfc16a48578692558",
+  "files": {
+    "LICENSE": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+    "SKILL.md": "d3611761039bdb2955e31856834feeec6ed5483a3fc64576e9a166f949a131d1"
+  }
+}

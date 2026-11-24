@@ -1,0 +1,16 @@
+{
+  "name": "ponytail-help",
+  "pack": "behavior",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "ponytail",
+  "repo": "https://github.com/DietrichGebert/ponytail",
+  "commit": "c982cd411abb53323c4baa1baa3c2f020b8d0b08",
+  "license": "MIT",
+  "fingerprint": "9d2a555fa279e9c8bc65b43cbe2f984bda879ab62573098fea3603722718932f",
+  "files": {
+    "LICENSE": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+    "SKILL.md": "94a7ec06ff04b65c14ae2811f603c1234e40a1963a66bf3632bdfe02ff831df0",
+    "UPSTREAM.md": "fec168b53e8831c27127eb0c46b721c3aade6c94e784c09d3cbd615b5c71ce72"
+  }
+}

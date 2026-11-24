@@ -1,0 +1,16 @@
+{
+  "name": "ci-cd-and-automation",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "e47d9b72846f47ee4a3552858f1825d206749bbad3b8383006499d7c27363f38",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "0f4c9cb7596173c074f2c3630eabd6b509c713338b0fe6f1028fc6989bb143ee",
+    "UPSTREAM.md": "f4ddef9a95c383059991c653d618baac9ef32e6bae4a3875aca36316bdac4942"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "api-and-interface-design",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "a454b36065d01b10bca8fb69fe7d5807d9ab33451f50246cf62e7778b79e83a7",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "8a20a6df7962a0f010b8e05b9b871dec15888ef46c0552e400b48e075a56bde5",
+    "UPSTREAM.md": "6ad4b728f34293d1abb47d8a1a8139cbce21971e02dc2a840810dec015132167"
+  }
+}

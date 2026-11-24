@@ -1,0 +1,17 @@
+{
+  "name": "frontend-ui-engineering",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "18b93907cc3a179b918252409f43eb0cc81e23c48602c051afdf2a5867a05daa",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "48a14c46936374f9e47f270834e2f7161b8e823485ff633d1de2f4ac469dc0a2",
+    "UPSTREAM.md": "6c48b8a70535f90022418ac75b8da5ffadb99216d1584edc930c0a4ad524bb4a",
+    "references/accessibility-checklist.md": "d2a1b7f6e4eb6426a2bca26035e1fe8c41763867744d05b442f131a7763b856a"
+  }
+}

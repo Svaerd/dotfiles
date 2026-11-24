@@ -1,0 +1,16 @@
+{
+  "name": "playwright-cli",
+  "pack": "design",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "playwright-cli",
+  "repo": "https://github.com/microsoft/playwright-cli",
+  "commit": "b85c7a736bb473bf55b584e54a09ffa698d6d871",
+  "license": "Apache-2.0",
+  "fingerprint": "06b970e450ce2b0307d302dbccffc5d1b9574cca7f2817996701c5e603d2f777",
+  "files": {
+    "LICENSE": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda",
+    "SKILL.md": "6d56ed2e03e934b1c8b6bf701ec6872df763f2f12139602fd9a179a13b9a66a7",
+    "UPSTREAM.md": "13710f1bae6caf13bb4ceaa4c3663f0e5e3c94a8e615d57cc73ca6744e82a79f"
+  }
+}

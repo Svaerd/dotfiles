@@ -1,0 +1,16 @@
+{
+  "name": "design-taste-frontend",
+  "pack": "design",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "taste-skill",
+  "repo": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+  "license": "MIT",
+  "fingerprint": "5266241b7c278b145d654e793dc8b969fd37c54ce707228b3f82daa53c1bd20e",
+  "files": {
+    "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+    "SKILL.md": "fb8945aabe157aae71dea947936b8ed8d7f850ca65137c13888eedc2b424cc8f",
+    "UPSTREAM.md": "7f535bd31c08d5f1714cd97aadafefbd422aeadc18227d79efe163436c7157d9"
+  }
+}

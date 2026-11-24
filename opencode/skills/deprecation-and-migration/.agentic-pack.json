@@ -1,0 +1,16 @@
+{
+  "name": "deprecation-and-migration",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "cac55bcd079b43a6df4cfb9f72e9d5ea118ca339da28bbdf149b0505693f178e",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "9555df8234d30e0e6f72762f944dc0287c373cdfb8687e45f4b3b4b1cfc3186f",
+    "UPSTREAM.md": "12b61d29e65b97efa033467456171f1084b1dc1752762255a2836a734c53d01e"
+  }
+}

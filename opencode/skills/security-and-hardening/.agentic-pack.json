@@ -1,0 +1,18 @@
+{
+  "name": "security-and-hardening",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "7a4ccf9c09e7ec3bb80f8a74d948d6d18c13546f119fe74951264f69cdbe314d",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "90c6148b5b7684dc1a339a3fd9689c16272a3e9db1fda79e860d2affb56b223d",
+    "UPSTREAM.md": "41aea566dd6f2043a5d91e834b8c252f724b728029a86fd57ef8ecbcb020751c",
+    "references/hardening-patterns.md": "6db84c11684a6800738eaef9bcef54546a01481be297469011455c90358dad90",
+    "references/security-checklist.md": "032375322774f8ac573844f1b62e6910f97090feddd77b9e7b66426f36637eab"
+  }
+}

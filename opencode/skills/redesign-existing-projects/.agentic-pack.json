@@ -1,0 +1,16 @@
+{
+  "name": "redesign-existing-projects",
+  "pack": "design",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "taste-skill",
+  "repo": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+  "license": "MIT",
+  "fingerprint": "e7c2ee7bbac27add5e32148adcf74eea6a3ea149f450edb26096f7f7563608a3",
+  "files": {
+    "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+    "SKILL.md": "e5a2a219569aa4369d233154c8f29264027be5af67276d29b58c35b4c28f38aa",
+    "UPSTREAM.md": "47a23654ace4f755ac795575cd35d4d3a7aad5b9bcf4d260d4b7b6c8b9086077"
+  }
+}

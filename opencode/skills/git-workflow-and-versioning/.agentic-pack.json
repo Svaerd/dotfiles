@@ -1,0 +1,16 @@
+{
+  "name": "git-workflow-and-versioning",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "c5fbbad906fc0913ae9c37120c0fa81698b53c8b821991baea41d954bfa6a42d",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "b9b23f8c063b967b07cde36f49a58cfb1ec73d8867cf5afaeaf149dcdb459634",
+    "UPSTREAM.md": "10ccc777eedbbf90654e223108c65fac388b21706966e7943bd3c9b7fd273f8e"
+  }
+}

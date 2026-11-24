@@ -1,0 +1,16 @@
+{
+  "name": "doubt-driven-development",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "0d0975467566aacc87c4ab358cfffd7c9b3ccf7c36dd3a687b9db10749b37a4f",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "c4ebb59328b180411807ac7bb1b8e6375f6ed2f03b34d7ef36935a74337e6688",
+    "UPSTREAM.md": "8a76b5f1448f6108e5bee50f8e8b3aa2078e759469fef21a43f8995a04e0c682"
+  }
+}

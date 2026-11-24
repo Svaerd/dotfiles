@@ -1,0 +1,74 @@
+{
+  "build": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "4fa2dcb0e168c8b8b078613124bb1a5a7c6da6ed309e41ed7bb57dcfb1823568",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "0acaa08c082b59bf9ab2ca028ed7725243c823539ee55d44d0ed61d8ce11423b",
+    "source": "agent-skills"
+  },
+  "code-simplify": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "324c13d0e6eb1ca599d3ae8d6d7748bce6c78b8e576167f815018fa8fbf923b8",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "e015a26aaaf0353344415a675db290b615f4752ef49d932630f27c64a1e5ac7e",
+    "source": "agent-skills"
+  },
+  "constraints": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "c0ca52cceefa699e48c1dbf00dffa59a6a3a08e2f21c3685149a976bfa81c01b",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "7751a50ed09a22885f6f9033a390541e157e7a186dba7f6083e48bd6870da3c6",
+    "source": "agent-skills"
+  },
+  "plan": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "51783ac9482fa48846deb3051eb6a77528faedb0b6e300a69a491090f37b64b1",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "5b3b6304b71fd8868bb6d3aab8aba75855466df57d0092df1c9dbe96bc02a934",
+    "source": "agent-skills"
+  },
+  "review": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "59d6c0880d7d5c16d8b82b65adae6579d56714454d6c6e4040ca90ef1185e161",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "7565a67d1ae07527cae0b2a83f0fdcf5e83130d8a2b5d212453606f890c21436",
+    "source": "agent-skills"
+  },
+  "ship": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "9999be468f66665e74ed7e2136ea168100d888e80bee91b6d18a18cf65ec2875",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "67d847367b0c6522e211a0db8cfb45262e089e314d152b3759946bab2dceaf83",
+    "source": "agent-skills"
+  },
+  "spec": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "867ba180c53573b786dca1151ca4304eb646111ca70920a5669eb4fdc94e527c",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "9e9e90af132df95e4035787cc4dafaaa88c568abdc7814b7e538e693e6c45660",
+    "source": "agent-skills"
+  },
+  "test": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "e82857b5480a2c4ca824839dacc5a232ffbc89a3e2fa7de0eb16341ade8d3fae",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "78727919cba81528dae209f2aadcf080cee51c97cf24b9ac224cb29bf06e0429",
+    "source": "agent-skills"
+  },
+  "webperf": {
+    "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+    "fingerprint": "0c914c250062b01478f4808ceda4f069467e7ee7c676d11ebc52bb61c3c7cd84",
+    "installedBy": "@weisser-dev/awesome-opencode",
+    "pack": "process",
+    "sha256": "863149318fda404ec07a89e5746e158466c50c70e73d42b29d61827f9c48093a",
+    "source": "agent-skills"
+  }
+}

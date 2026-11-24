@@ -1,0 +1,16 @@
+{
+  "name": "spec-driven-development",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "868e5d250ad77d56a123de47fe51302458e2c879fc3c9f54072f38920d15d3de",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "6850d6302a6183087c3756f218680675448b76544de3f145a8a635806ea5e175",
+    "UPSTREAM.md": "00a9a76cbff94d104e0099737b9c386a08281d8d69555202bdfba8b1fe010373"
+  }
+}

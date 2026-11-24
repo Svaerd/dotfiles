@@ -1,0 +1,16 @@
+{
+  "name": "gpt-taste",
+  "pack": "design",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "taste-skill",
+  "repo": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+  "license": "MIT",
+  "fingerprint": "22e2a34686fcef19a6071184fdcc7dfd855ebf2d4b5d529ac15579c926dda499",
+  "files": {
+    "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+    "SKILL.md": "664a42d9172068224d46418a02eba80dac6d56e23bb56917db806b5a52a8db18",
+    "UPSTREAM.md": "c5aef07b6ecd102e947e7d9cd3614591da8b4eb5446a74fe50d5d7f39d5a927f"
+  }
+}

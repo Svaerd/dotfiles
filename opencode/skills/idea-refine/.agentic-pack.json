@@ -1,0 +1,19 @@
+{
+  "name": "idea-refine",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "8f3f932affa1f724b21a15dd76882df9aecf1cb3afa983188c2ea9c37392ab62",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "211a76c164f97040e90b6f9dc9a867f7035094174b9c2984f4cdf4df9b99cd12",
+    "UPSTREAM.md": "132ebfdb3451dbad170f57479f801d92e8e63bcc4eed89a17337ea907f683526",
+    "examples.md": "563204bfbf2f80a444151695205af4cb759e722b3d1e5460e08f278a69c89ba1",
+    "frameworks.md": "161ebc18fdf2d996bc62a87a2d747cf1bf53548354f8925de25c732c27f00309",
+    "refinement-criteria.md": "1ca2973a4d01b5cb37ab7ddb2eff77fa4e792634a33d0ce44961c068fc88d51a"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "constraint-driven-development",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "f3fc4ee7f710123b8fdd2a9cf3a8e31305e86e6c970db4c8c487a442264f978d",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "afa7df8402d428742ffb2ef78f817ca1ebb0e23f45f82e2716076544782edf5a",
+    "UPSTREAM.md": "56b134a10f960f61f36cd57d6dfe7792e024d4e967f081e06966a531cdcfe9ae",
+    "references/floor-guard.md": "59715dc6c3c6c36ec9177f9ced65c379e80a4539b36115456666bfabc43a6a9c"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "documentation-and-adrs",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "2d0d4526b7e4959fc8992de8aa63ef4027bead121e8e808fa635d4838b15722f",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "b01d47cb15753c31917cd7d005755c9d942ab6f6e945e59ebb311b819a2cca21",
+    "UPSTREAM.md": "92b4ec2f713e93b95bc04ba6517560e8b010da37af20f46437e7ebe37cf2f4f6"
+  }
+}

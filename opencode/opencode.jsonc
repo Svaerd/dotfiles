@@ -1,0 +1,39 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // OpenCode Quota: tuiCommandDisplay chooses whether native TUI command output appears in the session transcript or a local popup dialog.
+  // OpenCode Quota: loads the server plugin for slash commands and quota checks.
+  "providers": {
+    "agentrouter": {
+      "models": {
+        // AgentRouter's GPT models only accept /v1/responses; the catalog package sends /v1/chat/completions
+        "gpt-5.6-sol": {
+          "package": "@opencode/ai/providers/openai-compatible/responses",
+        },
+        "gpt-6.1-sol": {
+          "package": "@opencode/ai/providers/openai-compatible/responses",
+        },
+        "gpt-6-astra": {
+          "package": "@opencode/ai/providers/openai-compatible/responses",
+        },
+      },
+    },
+  },
+  "plugins": [
+    "@slkiser/opencode-quota@latest",
+    "@dietrichgebert/ponytail",
+    "./plugins/caveman/plugin.js",
+    "opencode-antigravity-auth@2.1.1",
+    "@warp-dot-dev/opencode-warp",
+  ],
+  "shell": "/bin/zsh",
+  "mcp": {
+    "Neon": {
+      "type": "remote",
+      "url": "https://mcp.neon.tech/mcp",
+      "headers": {
+        "Authorization": "Bearer napi_u5ody5203jgxdbdar2bnar3gq9oofzdwuxlbz0t61t9ll015nvvqfb37jmo0p95s",
+      },
+      "enabled": true,
+    },
+  },
+}

@@ -1,0 +1,17 @@
+{
+  "name": "incremental-implementation",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "eb58cf6f2c8dc5089b7b69d17ee7791ccc616e37345f4c8d61e9637de70e4c91",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "90da13d4ad88af517526d650c13f93224b09843dd183837b19e6a9e303a6b99b",
+    "UPSTREAM.md": "22fd2f1797ff8cb8f4a30efd76249011b25117ee1ee3526fbcb311eed91a498b",
+    "references/definition-of-done.md": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee"
+  }
+}

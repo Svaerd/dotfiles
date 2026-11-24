@@ -1,0 +1,18 @@
+{
+  "name": "performance-optimization",
+  "pack": "process",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "derived",
+  "source": "agent-skills",
+  "repo": "https://github.com/addyosmani/agent-skills",
+  "commit": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+  "license": "MIT",
+  "fingerprint": "78e3776e6e0f8df13814a1b3755ed1bf83dbf9ec0482b700594bdd122ff1074b",
+  "files": {
+    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "SKILL.md": "c21a03f9107a929ce55db2a874471e5c346daa9ddfc10c5c4f846f72424a8d27",
+    "UPSTREAM.md": "61766039add35152d51af467b733b5ea7ec73a2910ba0bc6787dbc7bf1c6d13f",
+    "references/optimization-patterns.md": "d213e0617efc980e3f0cb6d9204e79f8efd54e0e2391df1c20cd675c1f52fca2",
+    "references/performance-checklist.md": "4d8fb8c5e784545bf4d3d287f7dd96659cdaf910b4d5a9a108ec2a02e2845560"
+  }
+}

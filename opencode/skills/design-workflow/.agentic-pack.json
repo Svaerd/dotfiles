@@ -1,0 +1,14 @@
+{
+  "name": "design-workflow",
+  "pack": "design",
+  "installedBy": "@weisser-dev/awesome-opencode",
+  "kind": "local",
+  "source": null,
+  "repo": null,
+  "commit": null,
+  "license": "MIT",
+  "fingerprint": "a53c79369de5f548f0b4187f7cb0a3375653ad2eacca7ab4059e4278e133aab3",
+  "files": {
+    "SKILL.md": "9873796528461a4b981baafa6240acfc73c749e43dfa457faf7f18808db042f9"
+  }
+}
