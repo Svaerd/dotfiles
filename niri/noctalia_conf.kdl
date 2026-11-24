@@ -77,7 +77,9 @@ binds {
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Comma { spawn-sh "noctalia msg settings-toggle"; }
-    // Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
+
+    Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
+
     Mod+Alt+L { spawn-sh "noctalia msg session lock-and-suspend"; }
     Mod+SemiColon { spawn-sh "noctalia msg panel-toggle session"; }
 
@@ -142,7 +144,7 @@ recent-windows {
     binds {
       Mod+Tab       { next-window       scope="workspace"; }
       Mod+Shift+Tab { previous-window   scope="workspace"; }
-      Alt+Tab       { next-window       scope="all"; }
-      Alt+Shift+Tab { previous-window   scope="all"; }
+      // Alt+Tab       { next-window       scope="all"; }
+      // Alt+Shift+Tab { previous-window   scope="all"; }
     }
 }

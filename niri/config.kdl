@@ -1,4 +1,4 @@
-// This config is in the KDL format: https://kdl.dev
+	      // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
@@ -351,6 +351,7 @@ spawn-at-startup "kbuildsycoca6"
 spawn-at-startup "niri-float-sticky"
 spawn-at-startup "tldr -u"
 spawn-at-startup "warp-terminal"
+// spawn-at-startup "megasync &"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -470,6 +471,8 @@ binds {
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
+
+    // Toggle Touchpad Tap-to-click
     Mod+Escape hotkey-overlay-title="Toggle Touchpad Tap-to-click" {spawn-sh "/home/host2/.config/niri/scripts/toggle_touchpad_click.sh"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
@@ -510,8 +513,8 @@ binds {
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
+    Mod+J     { focus-workspace-down; }
+    Mod+K     { focus-workspace-up; }
     Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
@@ -519,8 +522,8 @@ binds {
     Mod+Ctrl+Up    { move-window-up; }
     Mod+Ctrl+Right { move-column-right; }
     Mod+Ctrl+H     { move-column-left; }
-    Mod+Ctrl+J     { move-window-down; }
-    Mod+Ctrl+K     { move-window-up; }
+    Mod+Ctrl+J     { move-column-to-workspace-down; }
+    Mod+Ctrl+K     { move-column-to-workspace-up; }
     Mod+Ctrl+L     { move-column-right; }
 
     // Alternative commands that move across workspaces when reaching
